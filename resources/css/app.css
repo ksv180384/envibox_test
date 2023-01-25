@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-group.error label{
+    @apply text-red-500;
+  }
+
+  .input-group.error input{
+    @apply border-red-500;
+  }
+
+  .textarea-group.error label{
+    @apply text-red-500;
+  }
+
+  .textarea-group.error textarea{
+    @apply border-red-500;
+  }
+
+  .input-group label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  .input-group input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+  }
+
+  .input-group p.error,
+  .textarea-group p.error {
+    @apply text-red-500 text-xs italic;
+  }
+
+  .textarea-group label{
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  .textarea-group textarea{
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+  }
+}
